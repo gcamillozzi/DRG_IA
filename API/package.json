@@ -1,0 +1,40 @@
+{
+  "name": "amadeus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.ts",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "check": "tsc --noEmit",
+    "lint": "eslint src --ext .ts --fix",
+    "test": "vitest run --dir src/use-cases",
+    "build": "tsup src --minify --out-dir build"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "Dataintegra",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "9.0.1",
+    "axios": "1.6.8",
+    "cron": "3.1.7",
+    "fastify": "4.26.2",
+    "knex": "3.1.0",
+    "oracledb": "6.4.0",
+    "pg": "8.11.5",
+    "zod": "3.23.0"
+  },
+  "devDependencies": {
+    "@rocketseat/eslint-config": "2.2.2",
+    "@types/cron": "2.4.0",
+    "@types/node": "20.12.7",
+    "@types/oracledb": "6.4.0",
+    "dotenv": "16.4.5",
+    "eslint": "9.1.0",
+    "tsup": "8.0.2",
+    "tsx": "4.7.2",
+    "typescript": "5.4.5",
+    "vitest": "1.5.0"
+  }
+}
